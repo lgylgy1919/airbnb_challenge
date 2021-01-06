@@ -35,7 +35,14 @@ class RoomAdmin(admin.ModelAdmin):
         (
             "Basic Info",
             {
-                "fields": ("name", "description", "country", "address", "price"),
+                "fields": (
+                    "name",
+                    "description",
+                    "country",
+                    "city",
+                    "address",
+                    "price",
+                ),
             },
         ),
         (

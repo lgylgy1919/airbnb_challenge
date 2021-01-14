@@ -1,10 +1,15 @@
-from djnago.views import View
+from django.views import View
 from django.shortcuts import render
+from . import forms
 
 
 class LoginView(View):
-    def get(self, reqeust):
-        return render(request, "users/login.html")
+    def get(self, request):
+        form = forms.LoginForm(initial={"email":"lgylgy1919@naver.com"})
+        return render(request, "users/login.html", {"form": form})
 
     def post(self, request):
-        pass
+        form = forms.LoginForm(request.POST)
+        if form.is_valid():
+            print(form.cleaned_data)
+        return render(request, "users/login.html",{"form":form})

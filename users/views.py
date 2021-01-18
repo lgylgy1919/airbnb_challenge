@@ -116,5 +116,6 @@ def github_callback(request):
                     raise GithubException()
         else:
             raise GithubException()
+
     except GithubException:
         return redirect(reverse("users:login"))

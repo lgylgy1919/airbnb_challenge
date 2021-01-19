@@ -6,8 +6,8 @@
     "type": "git",
     "url": "git+https://github.com/lgylgy1919/airbnb_challenge.git"
   },
-  "scripts":{
-    "css":"gulp"
+  "scripts": {
+    "css": "gulp"
   },
   "homepage": "https://github.com/lgylgy1919/airbnb_challenge#readme",
   "devDependencies": {
@@ -16,10 +16,10 @@
     "gulp-csso": "^4.0.1",
     "gulp-postcss": "^9.0.0",
     "gulp-sass": "^4.1.0",
-    "node-sass": "^5.0.0"
+    "node-sass": "^5.0.0",
+    "tailwindcss": "^2.0.2"
   },
   "dependencies": {
-    "postcss": "^8.2.4",
-    "tailwindcss": "^2.0.2"
+    "postcss": "^8.2.4"
   }
 }

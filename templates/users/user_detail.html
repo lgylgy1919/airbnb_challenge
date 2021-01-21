@@ -18,15 +18,14 @@
                 {% endif %}
             </div>
 
-            <span class="text-lg">{{user.bio}}</span>
+            <span class="text-lg mb-5">{{user_obj.bio}}</span>
             
             {% if user == user_obj %}
                 <a href="#" class="btn-link">Edit Profile</a>
             {% endif %}
                 
-        </div>
-        
-        {% if user_obj.room.count > 0 %}
+        </div>    
+        {% if user_obj.rooms.count > 0 %}
             <h3 class="mb-12 text-2xl text-center">{{user_obj.first_name}}'s Room</h3>
             <div class="container mx-auto pb-10">
                 <div class="flex flex-wrap -mx-40 mb-10">
@@ -36,4 +35,5 @@
                 </div>
             </div>
         {% endif %}
+    </div>
 {% endblock content %}
